@@ -25,6 +25,15 @@ $guid = elgg_extract('guid', $vars, null);
 	<?php echo elgg_view('input/tags', array('name' => 'tags', 'value' => $tags)); ?>
 </div>
 
+<div>
+	<label><?php echo elgg_echo('access'); ?><label>
+	<?php echo elgg_view('input/access', array(
+		'name' => 'access_id',
+		'value' => 'params[access_id]'
+	)); ?>
+
+</div>
+
 <?php
 	$categories = elgg_view('input/categories', $vars);
 	if ($categories) {
