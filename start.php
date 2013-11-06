@@ -25,7 +25,7 @@ function answers_init() {
 	// live search
 	elgg_register_ajax_view('answers/search');
 
-	elgg_register_widget_type('answers', elgg_echo('answers'), elgg_echo('answers:widget'));
+	elgg_register_widget_type('answers', elgg_echo('answers'), elgg_echo('answers:widget'),'all,groups,index',TRUE);
 
 	elgg_register_page_handler('answers', 'answers_page_handler');
 

@@ -24,6 +24,12 @@ if (!$content) {
 	$content = elgg_echo('answers:none');
 }
 
+// added by Jon - provide an add button
+if(elgg_is_logged_in()){
+    elgg_register_title_button('answers','add');
+}
+
+
 $title = elgg_echo('answers:owner', array($page_owner->name));
 
 $vars = array(

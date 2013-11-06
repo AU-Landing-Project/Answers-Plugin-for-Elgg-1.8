@@ -26,12 +26,20 @@ if (!isset($vars['entity']->content_type)) {
 	$vars['entity']->content_type = 'site';
 }
 
+//added by Jon - fix for wrong widget reference to 'mine'
+if (elgg_instanceof(elgg_get_page_owner_entity(), 'group')) {
+
+	$mine=elgg_echo('groups:group');
+} else {
+	$mine=elgg_echo('mine');
+}
+
 $params = array(
 	'name' => 'params[content_type]',
 	'value' => $vars['entity']->content_type,
 	'options_values' => array(
 		'site' => elgg_echo('site'),
-		'mine' => elgg_echo('mine'),
+		'mine' => $mine,
 		'friends' => elgg_echo('friends'),
 	),
 );

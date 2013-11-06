@@ -29,7 +29,6 @@ $guid = elgg_extract('guid', $vars, null);
 	<label><?php echo elgg_echo('access'); ?><label>
 	<?php echo elgg_view('input/access', array(
 		'name' => 'access_id',
-		'value' => 'params[access_id]'
 	)); ?>
 
 </div>

@@ -37,6 +37,10 @@ if (!$friends = $owner->getFriends()) {
 		'limit' => 10
 	));
 }
+// added by Jon - provide an add button
+if(elgg_is_logged_in()){
+    elgg_register_title_button('answers','add');
+}
 
 $body = elgg_view_layout("content", array(
 	'content' => $content,

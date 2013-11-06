@@ -74,7 +74,7 @@ $english = array(
 	 */
 	'answers:widget' => 'Display the latest questions',
 	'answers:widget:numbertodisplay' => 'Number of questions',
-	'answers:widget:type' => "Who's questions to display",
+	'answers:widget:type' => "Whose questions to display",
 
 	/**
 	 * Status messages
